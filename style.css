@@ -5,6 +5,9 @@ a{
     color: white;
 
 }
+a:hover{
+    color: #fed136;
+}
 .main{
     background: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
 background-size: cover;
@@ -19,6 +22,9 @@ background-position: center center;
 .container{
     box-sizing: border-box;
 
+}
+p{
+    font-style: italic;
 }
 .padng{
     padding:10% 0 !important;
@@ -44,6 +50,9 @@ background-position: center center;
     font-size: 1.3rem;
     font-weight: 700;
 }
+#services{
+    padding-bottom: 30px;
+}
 
 .heading{
     font-size: 3.5rem;
@@ -54,6 +63,7 @@ background-position: center center;
 .fa-stack{
     border-radius: 50%;
 }
+/* portfolio */
  
 .portfolio{
     background:lightgrey ;
@@ -65,5 +75,89 @@ background-position: center center;
  .img-fluid{
      transition: ease-in-out .5s;
  }
+
+ /* about */
+ .timeline{
+    position: relative;
+    padding: 0;
+    list-style: none;
+    /* left: 50%; */
+ }
+ .timeline::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    /* margin-left: -1.5px; */
+    content: "";
+    background-color: #e9ecef;
+ }
+
+ .timeline li {
+    position: relative;
+    min-height: 250px;
+    margin-bottom: 50px;
+}
+.timeline  li:after, .timeline li:before {
+    display: table;
+    content: " ";
+}
+.timeline-img{
+    /* width:170px;
+    height: 170px;
+    border-radius: 50%; */
+
+    position: absolute;
+    z-index: 100;
+    left: 475px;
+    width: 170px;
+    height: 170px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    background-color: #fed136;
+    float: right;
+}
+
+.timeline-info{
+    float: left;
+    width: 40%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+}
+.timeline-info2{
+    float: right;
+    width: 40%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+}
+
+/* contact */
+.contact{
+    background-color: #212529;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 30px;
+}
  
- 
+ .contact .heading{
+     color: white;
+ }
+ .contact p{
+     color: darkgrey;
+ }
+ .form-group{
+     margin-bottom: 20px;
+ }
+ .textarea{
+     min-height: 175px;
+ }
+.form-control{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: gray;
+}
